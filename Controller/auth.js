@@ -82,7 +82,7 @@ const confirmUser = async (req, res) => {
         sameSite: "lax",
       });
 
-      res.status(200).redirect(`https://dev-dashboard.roundpe.com/`);
+      res.status(200).redirect(`https://magic-link-frontend-auth-flow.vercel.app/`);
     });
   } catch (error) {
     console.log(error);
