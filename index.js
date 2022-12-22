@@ -25,6 +25,11 @@ app.use(express.json());
 
 app.use("/link", require("./Routes/authRoute"));
 app.use("/user", require("./Routes/userRoute"));
+app.get('/',(req,res)=>{
+  res.status(200).json({
+    message:"API Working"
+  })
+})
 
 connectDB();
 app.listen(5000, () => {
