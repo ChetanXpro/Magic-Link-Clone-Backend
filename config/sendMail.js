@@ -12,7 +12,7 @@ let mailTransporter = nodeMailer.createTransport({
 
 const sendMail = async (email, url) => {
   const templatePath = path.join(__dirname, "../Views/ConfirmEmail.ejs");
-  console.log(email);
+
   const data = await ejs.renderFile(templatePath, {
     email,
     url,
