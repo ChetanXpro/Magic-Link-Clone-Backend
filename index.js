@@ -5,7 +5,7 @@ const connectDB = require("./config/db");
 const cors = require("cors");
 const app = express();
 
-const allowedOrigins = ["http://localhost:5173"];
+const allowedOrigins = ["http://localhost:5173","https://magic-link-frontend-auth-flow.vercel.app"];
 const corsOption = {
   origin: (origin, callback) => {
     if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
