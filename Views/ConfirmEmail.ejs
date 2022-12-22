@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <style>
+      #container {
+        background: "#2b2b2b";
+        /* background-image: url('https://images.pexels.com/photos/129731/pexels-photo-129731.jpeg?auto=compress&cs=tinysrgb&w=400'); */
+        
+        /* width: ; */
+      }
+      
+      h1,h4,h3 {
+        text-align: center;
+      }
+      #login{
+       text-decoration: none;
+       color: black;
+       font-size: larger;
+       text-align: center;
+       border-radius: 3px;
+ 
+       
+       padding: 10px;
+background: #7E81FF;
+margin: auto;
+      }
+      
+
+#confrm{
+  text-align: center;
+}
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Magic link clone</h1>
+      <br />
+  <h3 class="tag">
+    Click the button below to log in to project. This button will
+    expire in 10 minutes.
+  </h3>
+  <br />
+  <h4>
+    <a id="login" href="<%= url %>"> Login to Web3 Dao</button></a>
+  </h4>
+  <br>
+  <p id="confrm">Confirming this request will securely log you in using <%= email %></p>
+  <br>
+  <br>
+  <br>
+  
+</div>
+   
+  </body>
+</html>
