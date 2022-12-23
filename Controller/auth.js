@@ -76,10 +76,10 @@ const confirmUser = async (req, res) => {
       );
 
       res.cookie("jwt", token, {
-        path: "/",
-        maxAge: 100000,
-        httpOnly: true,
-        sameSite: "lax",
+       httpOnly: true,
+    secure: true,
+    sameSite: "none",
+    maxAge: 7 * 24 * 60 * 1000,
       });
 
       res.status(200).redirect(`http://localhost:5173/`);
