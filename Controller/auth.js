@@ -82,7 +82,7 @@ const confirmUser = async (req, res) => {
         sameSite: "lax",
       });
 
-      res.status(200).redirect(`http://localhost:5000/`);
+      res.status(200).redirect(`http://localhost:5173/`);
     });
   } catch (error) {
     console.log(error);
