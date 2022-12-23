@@ -82,7 +82,7 @@ const confirmUser = async (req, res) => {
     maxAge: 7 * 24 * 60 * 1000,
       });
 
-      res.status(200).redirect(`https://magic-link-frontend-auth-flow.vercel.app/`);
+      res.status(200).redirect(`https://magic-link-frontend-auth-flow-i83n.vercel.app/`);
     });
   } catch (error) {
     console.log(error);
