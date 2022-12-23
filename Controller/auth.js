@@ -82,7 +82,7 @@ const confirmUser = async (req, res) => {
         sameSite: "lax",
       });
 
-      res.status(200).redirect(`https://magic-link-frontend-auth-flow.vercel.app/`);
+      res.status(200).redirect(`http://localhost:5000/`);
     });
   } catch (error) {
     console.log(error);
